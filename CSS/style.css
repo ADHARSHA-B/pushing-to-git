@@ -498,7 +498,7 @@ a {
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .block__header {
   text-align: center;
@@ -631,4 +631,23 @@ a {
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+/* Features */
+.feature {
+  gap: 4rem 2rem;
+  margin: 10rem 0;
+}
+.feature:first-of-type {
+  margin-top: 5rem;
+}
+.feature__heading {
+  margin: 1rem 0;
+}
+.feature__image {
+  width: 100;
+}
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
